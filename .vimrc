@@ -1,5 +1,22 @@
 set nocompatible
 
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-rails.git'
+Bundle 'tomasr/molokai'
+" vim-scripts repos
+
+filetype plugin indent on     " required!
 set t_Co=256
 
 colorscheme molokai " uses molokai for the color scheme
@@ -22,10 +39,10 @@ set wildmenu
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 
 " nicer search settings
@@ -78,8 +95,8 @@ set cursorline " Highlight the current line
 
 " auto intenting stuff (probably)
 if has("autocmd")
-	filetype plugin indent on
-	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+  filetype plugin indent on
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 else
-	set autoindent
+  set autoindent
 endif
