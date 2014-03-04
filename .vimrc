@@ -14,6 +14,8 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-rails.git'
 Bundle 'tomasr/molokai'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-markdown.git'
 " vim-scripts repos
 
 filetype plugin indent on     " required!
@@ -100,3 +102,7 @@ if has("autocmd")
 else
   set autoindent
 endif
+
+" auto saving and loading folds in a file
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
