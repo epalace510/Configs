@@ -1,0 +1,4 @@
+! terminal colors
+*background: #202020
+*foreground: #FFFFFF
+*boldFont: Terminus
