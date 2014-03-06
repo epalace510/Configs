@@ -1,0 +1,4 @@
+# Autoset background (eventually replace with script)
+feh --bg-scale /mnt/Data/Documents/Backgrounds/a_little_color.png
+# Autostart ssh-agent
+eval $(/usr/bin/ssh-agent)

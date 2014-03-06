@@ -1,0 +1,57 @@
+! terminal colors
+*background: #202020
+*foreground: #FFFFFF
+*boldFont: Terminus
+urxvt.scrollBar: false
+
+!False tansparency
+*transparent: true
+urxvt.tintColor:        white
+urxvt.shading:          10
+
+
+! molokai scheme
+! Taken from everett1992/dotfiles
+! 252 light light grey
+*foreground: #D0D0D0
+! 234 dark gray
+*background: #1c1c1c
+
+! blacks?
+*color0:     #2e3436
+*color8:     #555753
+
+! reds
+*color1:     #bf3f3f
+*color9:     #cd0000
+
+! greens
+! 154  bright green
+*color2:    #afff00
+! 154  bright green
+*color10:    #afff00
+
+! yellows
+! 222 Light tan
+*color3:     #ffff87
+! 208 Bright Orange
+*color11:    #ff8700
+
+! blues
+! 141 light purple
+*color4:     #AF87FF
+! 141 light purple
+*color12:    #AF87FF
+
+! magentas
+! 197 Pink
+*color5:    #ff005f
+! 125 plumb
+*color13:    #af005f
+
+! cyans
+*color6:     #06989a
+*color14:    #66d9ef
+
+*color7:     #e5e5e5
+*color15:    #e5e5e5
