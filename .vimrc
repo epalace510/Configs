@@ -16,6 +16,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tomasr/molokai'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown.git'
+Bundle 'heartsentwined/vim-emblem'
 " vim-scripts repos
 
 filetype plugin indent on     " required!
