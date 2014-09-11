@@ -2,22 +2,25 @@ set nocompatible
 
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-rails.git'
-Bundle 'tomasr/molokai'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-markdown.git'
-Bundle 'heartsentwined/vim-emblem'
+Plugin 'tpope/vim-rails.git'
+Plugin 'tomasr/molokai'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-markdown.git'
+Plugin 'heartsentwined/vim-emblem'
+Plugin 'tpope/vim-haml'
 " vim-scripts repos
+
+call vundle#end()
 
 filetype plugin indent on     " required!
 set t_Co=256
