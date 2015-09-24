@@ -3,3 +3,11 @@
 	name = Eric Palace
 [core]
   excludesfile = ~/.gitignore
+[push]
+	default = simple
+
+#Aliases
+[alias]
+  lg=log --graph --decorate --pretty=oneline --abbrev-commit --all
+  st=status -sb
+  lga=log --all --pretty=format:'%Cred%h - %C(bold blue)<%an>%Creset %Cgreen[%cr]%Creset %s %C(yellow)%d%Creset' --abbrev-commit
